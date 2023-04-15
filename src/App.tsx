@@ -8,7 +8,6 @@ function App() {
   return (
     <div
       style={{ background: "#e8e4e1", height: "100vh" }}
-      tabIndex={0}
       onKeyDown={(e) => {
         if (e.key === 'Escape') {
           setIsMenuOpen(false);

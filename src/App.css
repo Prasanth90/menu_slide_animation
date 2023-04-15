@@ -161,3 +161,11 @@ a:focus {
   margin-top: 4;
   border-top: 1px solid #fff;
 }
+
+.visible {
+  visibility: visible;
+}
+
+.hidden {
+  visibility: hidden;
+}

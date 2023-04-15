@@ -11,13 +11,23 @@ interface IMenuProps {
 export const Menu = (props: IMenuProps) => {
   const { open, onCloseDrawerClick } = props;
   const primaryItemRef = React.useRef<any>();
-
+  
+  const [visibilityClassName, setVisibilityClassName] = React.useState("hidden");
   const menuDisplayClassName = open ? "menu-show" : "menu-hide";
   const setFocus = () => {
     if (open && primaryItemRef.current) {
       primaryItemRef.current.focus();
     }
+    if (!open) {
+      setVisibilityClassName("hidden");
+    }
   };
+
+  React.useEffect(() => {
+    if (open) {
+      setVisibilityClassName("visible");
+    }
+  }, [open]);
 
   const primaryLinks = ["Home", "Shop", "About us"];
 
@@ -30,7 +40,7 @@ export const Menu = (props: IMenuProps) => {
 
   return (
     <div
-      className={`menu-transition ${menuDisplayClassName}`}
+      className={`menu-transition ${menuDisplayClassName} ${visibilityClassName}`}
       onTransitionEnd={setFocus}
     >
       <div className="menu-header-container">
@@ -56,7 +66,7 @@ export const Menu = (props: IMenuProps) => {
       <ul className="primary-list">
         {primaryLinks.map((link, i) => (
           <li key={i} tabIndex={i} ref={i === 0 ? primaryItemRef : null}>
-            <a className="primary" href="#">
+            <a className="primary" href="https://www.google.com">
               {link}
             </a>
           </li>
