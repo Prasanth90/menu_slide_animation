@@ -6,7 +6,7 @@ Frameworks Used:
 
 - React is used as view framework
 - `transition` is used for animating the `menu`
--  Used `100%` width for menu while rendering in small screens (400px in Big Screens)
+-  Used `media queries` to set `100%` width for `menu` while rendering in small screens (400px in Big Screens)
 -  KeyBoard Navigation
     - `Menu icon` will be focussed by default
     - Clicking `Enter` will open the `Menu`
@@ -14,7 +14,7 @@ Frameworks Used:
     - `Enter` key can used to `Open` a specific item (For now, links point to https://www.google.com)
     - `Escape` key closes the menu and focuses the `Menu` again.
 - No javascript or css libraries used (Other than React)
--  Made Some minor changes to Font Sizes and Icon Widths just to keep the look and feel consistent ()
+-  Made Some minor changes to Font Sizes and Icon Widths just to keep the look and feel consistent.
     - Font Size 24px is used for primary links instead of 28px (Suggested in PDF)
     - Icon Width 18*18 is used instead of 40px (Suggested in PDF)
 
