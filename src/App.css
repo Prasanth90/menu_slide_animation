@@ -1,3 +1,8 @@
+:root {
+  --light-bg: #e8e4e1;
+  --dark-bg: #1f2021;
+}
+
 .App {
   text-align: center;
 }
@@ -5,6 +10,10 @@
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+
+body {
+  background: var(--light-bg);
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -36,7 +45,7 @@
 }
 
 .icon {
-  color: black; 
+  color: var(--dark-bg); 
   height: 18px;
   width: 18px;
 }
@@ -56,7 +65,7 @@
 }
 
 .light:hover {
-  background: #e8e4e1;
+  background: var(--light-bg);
   cursor: pointer;
 }
 
@@ -89,8 +98,8 @@ a {
 }
 
 .primary:hover  {
-  background: #e8e4e1;
-  color: black;
+  background: var(--light-bg);
+  color: var(--dark-bg);
 }
 
 .secondary {
@@ -116,17 +125,17 @@ ul {
 }
 
 li:focus {
-  border-color: lightgray;
+  border-color: var(--light-bg);
   outline: none !important;
-  border:1px solid lightgray;
-  box-shadow: 0 0 1px lightgray;
+  border:1px solid var(--light-bg);;
+  box-shadow: 0 0 1px var(--light-bg);;
 }
 
 a:focus {
-  border-color: lightgray;
+  border-color: var(--light-bg);;
   outline: none !important;
-  border:1px solid lightgray;
-  box-shadow: 0 0 1px lightgray;
+  border:1px solid var(--light-bg);;
+  box-shadow: 0 0 1px var(--light-bg);;
 }
 
 .title {
@@ -135,7 +144,7 @@ a:focus {
 }
 
 .menu-transition {
-  background: black;
+  background: var(--dark-bg);
   height: 100vh;
   width: 400px;
   -webkit-transition: right 0.5s;

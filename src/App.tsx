@@ -7,9 +7,8 @@ function App() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
   return (
     <div
-      style={{ background: "#e8e4e1", height: "100vh" }}
       onKeyDown={(e) => {
-        if (e.key === 'Escape') {
+        if (e.key === "Escape") {
           setIsMenuOpen(false);
         }
       }}
