@@ -2,7 +2,7 @@
 
 Live Demo at [Menu Drawer](http://demo-menu-slide.staara.ca/)
 
-Frameworks Used:
+## Brief Overview
 
 - React is used as view framework
 - `transition` is used for animating the `menu`
@@ -17,6 +17,14 @@ Frameworks Used:
 -  Made Some minor changes to Font Sizes and Icon Widths just to keep the look and feel consistent.
     - Font Size 24px is used for primary links instead of 28px (Suggested in PDF)
     - Icon Width 18*18 is used instead of 40px (Suggested in PDF)
+    
+ 
+ ## Code:
+ 
+ - [App.tsx](https://github.com/Prasanth90/menu_slide_animation/blob/main/src/App.tsx) is the root file that hosts both Header and Menu
+ - [Header.tsx](https://github.com/Prasanth90/menu_slide_animation/blob/main/src/components/Header.tsx) renders the page Header
+ - [Menu.tsx](https://github.com/Prasanth90/menu_slide_animation/blob/main/src/components/Menu.tsx) renders the page menu
+ - All the styles are handled in [App.css](https://github.com/Prasanth90/menu_slide_animation/blob/main/src/App.css)
 
 
 ## Available Scripts
