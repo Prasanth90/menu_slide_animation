@@ -1,6 +1,8 @@
 :root {
   --light-bg: #e8e4e1;
   --dark-bg: #1f2021;
+  --menu-width: 400px;
+  --menu-right-pos: -400px;
 }
 
 .App {
@@ -16,22 +18,17 @@ body {
   background: var(--light-bg);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media screen and (max-width: 768px) {
+  .menu-transition {
+    width: 100% !important;
   }
-}
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .visible {
+    width: 100% !important;
   }
-  to {
-    transform: rotate(360deg);
+
+  .menu-hide {
+    right: -100% !important;
   }
 }
 
@@ -45,7 +42,7 @@ body {
 }
 
 .icon {
-  color: var(--dark-bg); 
+  color: var(--dark-bg);
   height: 18px;
   width: 18px;
 }
@@ -97,7 +94,7 @@ a {
   font-weight: 200;
 }
 
-.primary:hover  {
+.primary:hover {
   background: var(--light-bg);
   color: var(--dark-bg);
 }
@@ -109,7 +106,7 @@ a {
 
 .secondary:hover {
   text-decoration: underline;
-  color: whitesmoke
+  color: whitesmoke;
 }
 
 ul {
@@ -121,21 +118,21 @@ ul {
 
 .primary-list {
   margin-top: 40px;
-  flex-grow: 1
+  flex-grow: 1;
 }
 
 li:focus {
   border-color: var(--light-bg);
   outline: none !important;
-  border:1px solid var(--light-bg);;
-  box-shadow: 0 0 1px var(--light-bg);;
+  border: 1px solid var(--light-bg);
+  box-shadow: 0 0 1px var(--light-bg);
 }
 
 a:focus {
-  border-color: var(--light-bg);;
+  border-color: var(--light-bg);
   outline: none !important;
-  border:1px solid var(--light-bg);;
-  box-shadow: 0 0 1px var(--light-bg);;
+  border: 1px solid var(--light-bg);
+  box-shadow: 0 0 1px var(--light-bg);
 }
 
 .title {
@@ -146,7 +143,7 @@ a:focus {
 .menu-transition {
   background: var(--dark-bg);
   height: 100%;
-  width: 400px;
+  width: var(--menu-width);
   -webkit-transition: right 0.5s;
   transition: right 0.5s;
   top: 0;
@@ -157,17 +154,17 @@ a:focus {
 }
 
 .menu-show {
-  right : 0px;
+  right: 0px;
 }
 
 .menu-hide {
-  right: -400px;
+  right: var(--menu-right-pos);
 }
 
 .menu-header-container {
   display: flex;
   align-items: center;
-  height: 40px
+  height: 40px;
 }
 
 .menu-header {
@@ -183,7 +180,7 @@ a:focus {
 
 .visible {
   visibility: visible;
-  width: 400px;
+  width: var(--menu-width);
 }
 
 .hidden {
