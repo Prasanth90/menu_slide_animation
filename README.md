@@ -29,9 +29,13 @@ Live Demo at [Menu Drawer](http://demo-menu-slide.staara.ca/)
 
 ## Available Scripts
 
-- To run Locally `npm start`
+- To install the packages and run it locally 
+   - `npm install`
+   - `npm start`
 
 - To build locally `npm run build`
+
+- Developed and tested using `node v18.15.0` in Mac M1 (Monterey)
 
 
 Live Demo at [Menu Drawer](http://demo-menu-slide.staara.ca/)
