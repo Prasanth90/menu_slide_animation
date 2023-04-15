@@ -32,8 +32,8 @@ export const Header = (props: IHeaderProps) => {
           }
         }}
       >
-        <div className="menu-icon-container" role="button">
-          <img src={menu} className="menu-icon" alt="Menu" />
+        <div className="icon-container light" role="button">
+          <img src={menu} className="icon" alt="Menu" />
         </div>
       </div>
     </div>

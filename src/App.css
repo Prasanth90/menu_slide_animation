@@ -35,13 +35,18 @@
   padding-right: 4px;
 }
 
-.menu-icon {
+.icon {
   color: black; 
   height: 18px;
   width: 18px;
 }
 
-.menu-icon-container {
+.close-icon {
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
+}
+
+.icon-container {
   border-radius: 50%;
   height: 36px;
   width: 36px;
@@ -50,8 +55,13 @@
   justify-content: center;
 }
 
-.menu-icon-container:hover {
+.light:hover {
   background: #e8e4e1;
+  cursor: pointer;
+}
+
+.dark:hover {
+  background: #555;
   cursor: pointer;
 }
 

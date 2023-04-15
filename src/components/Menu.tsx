@@ -11,8 +11,9 @@ interface IMenuProps {
 export const Menu = (props: IMenuProps) => {
   const { open, onCloseDrawerClick } = props;
   const primaryItemRef = React.useRef<any>();
-  
-  const [visibilityClassName, setVisibilityClassName] = React.useState("hidden");
+
+  const [visibilityClassName, setVisibilityClassName] =
+    React.useState("hidden");
   const menuDisplayClassName = open ? "menu-show" : "menu-hide";
   const setFocus = () => {
     if (open && primaryItemRef.current) {
@@ -46,18 +47,11 @@ export const Menu = (props: IMenuProps) => {
       <div className="menu-header-container">
         <h3 className="menu-header">Menu</h3>
         <div
-          className="menu-icon-container"
+          className="icon-container dark"
           onClick={onCloseDrawerClick}
           role="button"
         >
-          <img
-            src={close}
-            className="menu-icon"
-            style={{
-              WebkitFilter: "invert(100%)",
-            }}
-            alt="Menu"
-          />
+          <img src={close} className="icon close-icon" alt="Menu" />
         </div>
       </div>
 
