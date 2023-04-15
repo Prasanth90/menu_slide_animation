@@ -13,17 +13,6 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
 .App-link {
   color: #61dafb;
 }
@@ -35,4 +24,140 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.app-header {
+  height: 60px;
+  display: flex;
+  background: white;
+  align-items: center;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.menu-icon {
+  color: black; 
+  height: 18px;
+  width: 18px;
+}
+
+.menu-icon-container {
+  border-radius: 50%;
+  height: 36px;
+  width: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-icon-container:hover {
+  background: #e8e4e1;
+  cursor: pointer;
+}
+
+.menu-footer {
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  padding-bottom: 16px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+}
+
+.primary {
+  padding: 8px;
+  padding-left: 16px;
+  font-size: 24px;
+  font-weight: 200;
+}
+
+.primary:hover  {
+  background: #e8e4e1;
+  color: black;
+}
+
+.secondary {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.secondary:hover {
+  text-decoration: underline;
+  color: whitesmoke
+}
+
+ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+}
+
+.primary-list {
+  margin-top: 40px;
+  flex-grow: 1
+}
+
+li:focus {
+  border-color: lightgray;
+  outline: none !important;
+  border:1px solid lightgray;
+  box-shadow: 0 0 1px lightgray;
+}
+
+a:focus {
+  border-color: lightgray;
+  outline: none !important;
+  border:1px solid lightgray;
+  box-shadow: 0 0 1px lightgray;
+}
+
+.title {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.menu-transition {
+  background: black;
+  height: 100vh;
+  width: 400px;
+  -webkit-transition: right 0.5s;
+  transition: right 0.5s;
+  top: 0;
+  position: absolute;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-show {
+  right : 0px;
+}
+
+.menu-hide {
+  right: -400px;
+}
+
+.menu-header-container {
+  display: flex;
+  align-items: center;
+  height: 40px
+}
+
+.menu-header {
+  flex-grow: 1;
+  color: white;
+  padding-left: 16px;
+}
+
+.divider {
+  margin-top: 4;
+  border-top: 1px solid #fff;
 }
