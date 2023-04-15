@@ -80,7 +80,7 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   gap: 16px;
-  padding-bottom: 16px;
+  padding-bottom: 32px;
 }
 
 a {
@@ -145,7 +145,7 @@ a:focus {
 
 .menu-transition {
   background: var(--dark-bg);
-  height: 100vh;
+  height: 100%;
   width: 400px;
   -webkit-transition: right 0.5s;
   transition: right 0.5s;
@@ -183,8 +183,10 @@ a:focus {
 
 .visible {
   visibility: visible;
+  width: 400px;
 }
 
 .hidden {
   visibility: hidden;
+  width: 0px;
 }
