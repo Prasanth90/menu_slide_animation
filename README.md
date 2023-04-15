@@ -40,3 +40,9 @@ Live Demo at [Menu Drawer](http://demo-menu-slide.staara.ca/)
 
 Live Demo at [Menu Drawer](http://demo-menu-slide.staara.ca/)
 
+
+
+![](screenshots/demo_laptop.gif)
+
+![](screenshots/demo_mobile.gif)
+
